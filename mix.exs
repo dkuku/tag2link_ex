@@ -20,7 +20,7 @@ defmodule Tag2link.MixProject do
   defp deps do
     [
       {:jason, "~> 1.4", runtime: false},
-      {:req, "~> 0.5", runtime: false}
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 
@@ -30,8 +30,7 @@ defmodule Tag2link.MixProject do
 
   defp package() do
     [
-      files: ~w(lib priv .formatter.exs mix.exs README* readme* LICENSE*
-                license* CHANGELOG* changelog* src),
+      files: ~w(lib priv .formatter.exs mix.exs README*),
       licenses: ["ISC"],
       links: %{
         "GitHub" => "https://github.com/dkuku/tag2link_ex",
